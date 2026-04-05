@@ -4,11 +4,11 @@ public class Feature {
     private Geometry geometry;
     private Properties properties;
 
-    public Geometry getGeometries() {
+    public Geometry getGeometry() {
         return geometry;
     }
 
-    public Properties getProperty() {
+    public Properties getProperties() {
         return properties;
     }
 }
