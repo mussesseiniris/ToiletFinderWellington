@@ -1,5 +1,5 @@
 package com.iris.toiletfinderwellington.model;
-import java.util.List;
+
 
 public class Toilet {
     private int id;
@@ -7,25 +7,28 @@ public class Toilet {
     private double longitude;
     private String name;
     private String address;
+    private String openHours;
+    private String type;
+    private String gender;
+    private String suburb;
+    private boolean mobilityAccess;
+    private boolean babyChangeTable;
     private float rating;
-    private String scale;
-    private String openTime;
-    private String closeTime;
-    private List<String> facilities;
-    private boolean isIndependent;
 
-    public Toilet(int id, double latitude, double longitude, String name, String address, float rating, String scale, String openTime, String closeTime, List<String> facilities, boolean isIndependent) {
+    public Toilet(int id, double latitude, double longitude, String name, String address,String openHours, String type, String gender, String suburb, boolean mobilityAccess, boolean babyChangeTable, float rating) {
         this.id = id;
         this.latitude = latitude;
         this.longitude = longitude;
         this.name = name;
         this.address = address;
+        this.openHours = openHours;
+        this.type = type;
+        this.gender = gender;
+        this.suburb = suburb;
+        this.mobilityAccess = mobilityAccess;
+        this.babyChangeTable = babyChangeTable;
         this.rating = rating;
-        this.scale = scale;
-        this.openTime = openTime;
-        this.closeTime = closeTime;
-        this.facilities = facilities;
-        this.isIndependent = isIndependent;
+
     }
 
     public double getLatitude() {
@@ -56,23 +59,27 @@ public class Toilet {
     }
 
 
-    public String getScale() {
-        return scale;
+    public String getOpenHours() {
+        return openHours;
     }
 
-    public String getOpenTime() {
-        return openTime;
+    public String getType() {
+        return type;
     }
 
-    public String getCloseTime() {
-        return closeTime;
+    public String getGender() {
+        return gender;
     }
 
-    public List<String> getFacilities() {
-        return facilities;
+    public String getSuburb() {
+        return suburb;
     }
 
-    public boolean isIndependent() {
-        return isIndependent;
+    public boolean isMobilityAccess() {
+        return mobilityAccess;
+    }
+
+    public boolean isBabyChangeTable() {
+        return babyChangeTable;
     }
 }
